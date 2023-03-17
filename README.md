@@ -6,6 +6,7 @@ Este Proyecto ha sido creado con la siguientes herramientas:
 - HTML5
 - SCSS
 - Angular
+- JavaScript
 
 ![desktop-design](/src/assets/images/Screenshot1.png)
 
