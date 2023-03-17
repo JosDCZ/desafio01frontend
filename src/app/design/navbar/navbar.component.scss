@@ -1,0 +1,88 @@
+/* ------------------- Navbar ------------------*/
+.navbar {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-menu-mobile {
+  display: none;
+}
+.nav-logo > img {
+  width: 4rem;
+}
+.nav-link {
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: #f15e50;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1130px) {
+  .navbar {
+    padding: 32px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  /*------------------ Menu Hamburgesa --------------------*/
+  .hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    background-color: #fffdfa;
+    outline: none;
+    border: none;
+    appearance: none;
+  }
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #00001a;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  /*------------------ Navbar Menu --------------------*/
+  .nav-menu-mobile.is-active {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 20rem;
+    top: 0;
+    min-height: 100vh;
+    background-color: #fffdfa;
+    display: block;
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+  .nav-link-mob:hover {
+    color: #f15e50;
+  }
+  .nav-item-mob {
+    padding: 15px;
+  }
+}

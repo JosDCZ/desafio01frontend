@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+/* ------------------- General -------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: #fffdfa;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  padding-right: 20px;
+}
+
+h2 {
+  padding: 5px 0 3px 0;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #e9ab53;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  color: #00001a;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1130px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .content-card h3 {
+    font-size: 20px;
+  }
+  p {
+    line-height: 2;
+  }
+  body.is-active {
+    background-color: #c5c6ce;
+  }
+}

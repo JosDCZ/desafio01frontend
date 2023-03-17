@@ -1,0 +1,14 @@
+/* ------------------- Membrete -------------------*/
+.main-article {
+  padding: 3rem 6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1130px) {
+  .main-article {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}

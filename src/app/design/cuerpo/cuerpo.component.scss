@@ -1,0 +1,38 @@
+/* -------------------Heading-------------------*/
+.front-image img {
+  width: 100%;
+}
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 3% 0;
+}
+.read-more-btn {
+  margin-top: 10%;
+  background-color: #f15e50;
+  color: #fffdfa;
+  letter-spacing: 0.3em;
+  padding: 4% 15%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.read-more-btn:hover {
+  background-color: #00001a;
+}
+@media screen and (max-width: 1130px) {
+  .mobile-image {
+    content: url("../../../assets/images/image-web-3-mobile.jpg");
+  }
+  .heading {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .heading {
+    padding: 5% 0;
+  }
+  .read-more-btn {
+    margin-top: 4%;
+  }
+}

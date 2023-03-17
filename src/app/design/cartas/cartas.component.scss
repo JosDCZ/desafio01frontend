@@ -1,0 +1,50 @@
+/*-------------- Cartas --------------*/
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 6rem;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 5px;
+  gap: 25px;
+}
+.card > img {
+  max-width: 100%;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+}
+.content-card p {
+  line-height: 1.5;
+  color: #5d5f79;
+}
+.content-card h2 {
+  color: #c5c6ce;
+}
+.content-card h3 {
+  font-size: 16px;
+  color: #00001a;
+  padding-bottom: 8px;
+}
+.content-card h3:hover {
+  color: #f15e50;
+}
+
+@media screen and (max-width: 1130px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .card {
+    padding: 10px 0;
+    align-items: flex-start;
+  }
+  .content-card {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
