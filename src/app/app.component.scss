@@ -1,5 +1,5 @@
 /* ------------------- Membrete -------------------*/
-.main-article {
+.main-noticias {
   padding: 3rem 6rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1130px) {
-  .main-article {
+  .main-noticias {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
